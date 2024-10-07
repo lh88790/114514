@@ -1,0 +1,44 @@
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
+OrionLib:MakeNotification({
+                    Name = "瞎天帝nb！！！",
+                    Content = "瞎天帝 中心已为您加载成功",
+                    Time = 5
+                })     
+print("索引开启反挂机")
+Start = tick()
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		   wait(1)
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)      
+Start = tick()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/XK%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2.txt", true))()
+    local window = library:new("瞎天帝 中心【测试版】")
+    local creds = window:Tab("关于", "6031097229")
+    local bin = creds:section("信息", true)
+    bin:Label("你的注入器:" .. identifyexecutor())
+    bin:Label("你的地图id:"..game.PlaceId)
+    bin:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
+    bin:Label("基本全缝合，一些自制")    
+    bin:Label("不知道更新(缝合)什么了")
+    bin:Label("正在努力制作此中心")
+    bin:Label("创作日期：忘了")
+    bin:Label("发布日期：做好了发")
+    
+    bin:Button("复制作者qq", function()
+    setclipboard("3467005771")
+end)
+    bin:Button("复制root教程", function()
+    setclipboard("删除date就可以了")
+end)
+    bin:Button("复制领取100万r币教程", function()
+    setclipboard("万華鏡血輪眼の幻術の中にひっそりとしているのだろう")
+end)
+
+local creds = window:Tab("通用", "6035145364")
+    local credits = creds:section("通用内容", true)
+    
+credits:Slider('修改速度', 'WalkspeedSlider', 16, 16, 99999,false, function(Value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+end)
